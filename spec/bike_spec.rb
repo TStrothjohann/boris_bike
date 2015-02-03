@@ -1,6 +1,5 @@
 require 'bike'
 
-
 describe Bike do 
 	let(:bike){Bike.new}
 
@@ -14,9 +13,8 @@ describe Bike do
 	end
 
 	it 'bike should be fixed' do
-		bike.break!	
-		bike.fix!
-		expect(bike).not_to be_broken
+		bike.break!
+		expect(bike.fix!).not_to be_broken
 	end
 
 end
