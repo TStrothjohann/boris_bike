@@ -17,4 +17,10 @@ We are building a system to manage the Boris Bike rental.
 can_be_broken
 can_be_rented
 
+###Dockingstation
+can_accept_bike
+can_release_bike unless broken
+has_x_places and can_be_full
+
+
 ###User
